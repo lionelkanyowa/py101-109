@@ -1,5 +1,5 @@
 
-try: 
+"""try: 
     num_str = input("Enter a number: ")
     num = int(num_str)
 
@@ -12,4 +12,14 @@ else:
     print(f"Result: {result}")
 finally:
     print("Exception handling complete")
+    """
 
+# EAFR
+def lower_first(word):
+    try:
+        return word[0].lower() + word[1:]
+    except (TypeError, IndexError):
+        return word # Handle exceptions by returning `word` as-is
+    
+print(lower_first("BETTY BOO"))
+print(lower_first(33))

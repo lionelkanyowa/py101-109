@@ -7,3 +7,7 @@ print(my_list1)
 
 # Prediction: This would output the following:
 # [{"first": "value"}, {"second": "value2"}, 3, 4, 5]. 
+
+# Actual Answer:
+# [{'first': 42}, {'second': 'value2'}, 3, 4, 5]
+
