@@ -52,8 +52,8 @@ while invalid_number(number2):
 # printing the numbers
 # print(f'{number1} {number2')
 
-print("""What operation would you like to perform?
-      (1)Add (2)Subtract (3)Multiply (4)Divide""")
+print("""What operation would you like to perform?\n
+ (1)Add\n (2)Subtract\n (3)Multiply\n (4)Divide""")
 operation = input()
 # 01/ 22/2024: Adding looping logic to validate the operation requested 
 # by the user. The only
