@@ -33,6 +33,7 @@ number2 = input()
 
 while invalid_number(number2):
     prompt(f'{number2} is not a valid number, please enter a valid number.')
+    number2 = input()
 
 # Ask the user which operation they would like to perform by typing 1,2,3 or 4.
 prompt("Type the number for the operation you want to perform?\n1.Add\n2.Subtract\n3.Multiply\n4.Divide")
