@@ -6,13 +6,13 @@ def prompt(message):
 # Catching `Value/Error` exception when the argument can't be converted into an integer.
 def invalid_number(num_str):
     try:
-        int(num_str)
+        float(num_str)
     except ValueError:
         return True
     
     return False
 
-# Feature 2: Etracting messages in the program to a JSON File.
+# Feature 2: Extracting messages in the program to a JSON File.
 
 def messages(message, language='English'):
     return MESSAGE[language][message]
@@ -24,7 +24,7 @@ with open('calc_messages.json', 'r') as file:
 
 # Feature 1: Added a do/while loop to ask the user to perform another calculation.
 while True:
-        # Calling the function in line 2 to welcome the user to the program. 
+    # Calling the function in line 3 to welcome the user to the program. 
     prompt(messages('Welcome'))
     prompt(messages('Welcome', 'Shona'))
     prompt(messages('Welcome', 'Bemba'))
@@ -32,27 +32,27 @@ while True:
     
 
 
-    # Calling the function in line 2 and prompting the user to enter the first integer.
+    # Calling the function in line 3 prompting the user to enter the first integer.
     prompt(messages('First Number'))
     prompt(messages('First Number', 'Shona'))
     prompt(messages('First Number', 'Bemba'))
     
 
     
-    number1 = input()
+    number1 = (input())
     prompt(f'{(messages('Chosen Output'))} {number1} (English)')
     prompt(f'{(messages('Chosen Output', 'Shona'))} {number1} (Shona)')
     prompt(f'{(messages('Chosen Output', 'Bemba'))} {number1} (Bemba)')
     prompt(messages('Line Break'))
 
-    # While loop checking if the first input is valid if not, it  Calls the function in line 8 informing the
+    # While loop checking if the first input is valid if not, it  Calls the function in line 7 informing the
     # user that the input in invalid. Loop terminates when input is valid.
     while invalid_number(number1):
         prompt(f'{number1} {messages('First Invalid')}')
         prompt(f'{number1} {messages('First Invalid', 'Shona')}')
         prompt(f'{number1} {messages('First Invalid', 'Bemba')}')
         
-        number1 = input()
+        number1 = (input())
         
 
 
@@ -62,13 +62,13 @@ while True:
     prompt(messages('Second Number', 'Bemba'))
     
     
-    number2 = input()
+    number2 = (input())
     prompt(f'{(messages('Chosen Output'))} {number2}')
     prompt(f'{(messages('Chosen Output', 'Shona'))} {number2}')
     prompt(f'{(messages('Chosen Output', 'Bemba'))} {number2}')
     prompt(messages('Line Break'))
 
-    # While loop checking if the second input is valid if not, it  Calls the function in line 6 informing the
+    # While loop checking if the second input is valid if not, it  Calls the function in line 7 informing the
     # user that the input in invalid. Loop terminates when input is valid.
 
     while invalid_number(number2):
@@ -77,7 +77,7 @@ while True:
         prompt(f'{number2} {messages('Second Invalid', 'Bemba')}')
         
 
-        number2 = input()
+        number2 = float(input())
 
     # Ask the user which operation they would like to perform by typing 1,2,3 or 4.
     prompt(messages('Select Operation'))
@@ -99,13 +99,13 @@ while True:
     # Using a match/case statement to work through the logic of the calculations for each operation:
     match operation:
         case "1":
-            output = int(number1) + int(number2)
+            output = float(number1) + float(number2)
         case "2":
-            output = int(number1) - int(number2)
+            output = float(number1) - float(number2)
         case "3":
-            output = int(number1) * int(number2)
+            output = float(number1) * float(number2)
         case "4":
-            output = int(number1) / int(number2)
+            output = float(number1) / float(number2)
 
     prompt(f'{messages('Result')} {output} (English)')
     prompt(f'{messages('Result', 'Shona')} {output} (Shona)')
