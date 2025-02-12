@@ -1,0 +1,42 @@
+{
+    "English": {
+        "Welcome": "Welcome to Calculator (English)",
+        "First Number": "What's the first number? (English)",
+        "First Invalid": "is not a valid number, please enter a valid number. (English)",
+        "Second Number": "What's the second number? (English)",
+        "Second Invalid": "is not a valid number, please enter a valid number. (English)",
+        "Select Operation": "Type the number for the operation you want to perform? (English)\n [1]-Add [2]-Subtract [3]-Multiply [4]-Divide\n",
+        "Invalid Operation": "You must choose 1, 2, 3, or 4 (English)",
+        "Result": "The result is:",
+        "Another Calculation": "Perform another calculation? (y/n) (English)",
+        "Invalid": "invalid. Please enter y or n (English)",
+        "Line Break": "==============================================",
+        "Chosen Output": "You entered:"
+    },
+    "Shona": {
+        "Welcome": "Tikugashirei kuCalculator (Shona)",
+        "First Number": "Ndeupi nhamba yekutanga? (Shona)",
+        "First Invalid": "haina kunaka, ndapota nyora nhamba yakakodzera. (Shona)",
+        "Second Number": "Ndeupi nhamba yechipiri? (Shona)",
+        "Second Invalid": "haina kunaka, ndapota nyora nhamba yakakodzera. (Shona)",
+        "Select Operation": "Sarudza nhamba yechiito chaunoda kuita: (Shona)\n [1]-Kuwedzera [2]-Kubvisa [3]-Kuwanza [4]-Kugovanisa\n",
+        "Invalid Operation": "Unofanira kusarudza 1, 2, 3 kana 4 (Shona)",
+        "Result": "Mhinduro ndeiyi:",
+        "Another Calculation": "Uchaita chimwe chiverengo here? (y/n) (Shona)",
+        "Invalid": "hazvina kunaka. Ndapota nyora y kana n (Shona)",
+        "Chosen Output": "Wapinza:"
+    },
+    "Bemba": {
+        "Welcome": "Mwabombeni ku Calculator (Bemba)",
+        "First Number": "Ninani inamba ya kwambiso? (Bemba)",
+        "First Invalid": "te inamba isuma, bushe mukacepa inamba isuma. (Bemba)",
+        "Second Number": "Ninani inamba ya cipili? (Bemba)",
+        "Second Invalid": "te inamba isuma, bushe mukacepa inamba isuma. (Bemba)",
+        "Select Operation": "Tandalilani inamba ya umsebenzi umwe ukwishiba :(Bemba)\n [1]-Okusansha [2]-Okupoka [3]-Okusanshanya [4]-Okutaba",
+        "Invalid Operation": "Mufwile mutandalile 1, 2, 3, kapena 4",
+        "Result": "Icili cafumine ni:",
+        "Another Calculation": "Mulefwaya ukutwala cali cimbi? (y/n) (Bemba)",
+        "Invalid": "Cali cipusana. Bushe cepeni y kapena n (Bemba)",
+        "Chosen Output": "Mwasalile"
+    }
+}
