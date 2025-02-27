@@ -2,6 +2,6 @@
     "code-runner.clearPreviousOutput": true,
     "code-runner.runInTerminal": true,
     "code-runner.saveAllFilesBeforeRun": true,
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "terminal.integrated.fontSize": 14
 }

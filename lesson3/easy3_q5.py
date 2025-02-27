@@ -3,11 +3,12 @@
 # use either True or False?
 
 def is_color_valid(color):
-    # return(if color == "blue" or color == "green" else)
-    # return color == "blue" or color == "green"
-    return color in ["blue", "green"]
     # if color == "blue" or color == "green":
         # return True
     # else:
         # return False
     
+    # return color == "blue" or color == "green"
+    return color in ["blue", "green"]
+    
+print(is_color_valid("blue"))
