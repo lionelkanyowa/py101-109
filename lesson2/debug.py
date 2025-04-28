@@ -2,7 +2,7 @@ import pdb
 
 counter = 1
 
-pdb.set_trace() # Another breakpoint
+# pdb.set_trace() # Another breakpoint
 
 while counter <= 5:
     print(counter)

@@ -1,5 +1,5 @@
 # Tracing the code:
-
+'''
 def process_student(student_data):
     name = student_data.get('name')
     grade = student_data.get('grade')
@@ -26,5 +26,24 @@ def collect_grades(students):
 
 grades = collect_grades(students)
 print(average_grade(grades))
+'''
 
+def titlize(sentence):
+    words = sentence.split()
+    # print(words)
+    new_words = []
 
+    for word in words:
+        # print(f"Processing word: {word}, length: {len(word)}")
+        if len(word) > 2:
+            # print(f"Processing word: {word}, length: {len(word)}")
+            word = word.capitalize()
+            # print(f"Processing word: {word}, length: {len(word)}")
+        new_words.append(word)
+            # print(word)
+
+    return ' '.join(new_words)
+
+title = 'hello world of programming'
+print(titlize(title))
+# titlize(title)
